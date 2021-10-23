@@ -1,0 +1,341 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Merienda', cursive;
+    background-image: url(../Imagenes/fondo.jpg);
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: #1e504c;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 60px;
+    align-items: center;
+    border-bottom: 2px solid antiquewhite;
+    min-height: 8vh;
+}
+
+
+/*Estilos-barra-de-navegación*/
+
+.logo {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.logo a {
+    color: antiquewhite;
+    font-size: 16px;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.logo a:hover {
+    color: rgb(0, 0, 0)
+}
+
+.logotipo {
+    padding: 0;
+    margin: 0;
+    width: 17px;
+    height: 17px;
+}
+
+.nav {
+    flex: 4 1 auto;
+    text-align: center;
+}
+
+.nav a {
+    color: antiquewhite;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.nav a:hover {
+    color: rgb(0, 0, 0)
+}
+
+.icono {
+    padding: 0;
+    margin: 0 5px;
+}
+
+
+/* Estilos cuerpo-de-contenido */
+
+.cont-principal {
+    font-size: 23px;
+    min-height: 87vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Scheherazade New';
+}
+
+.caja-transparente {
+    width: 60%;
+    height: 50%;
+    margin: 2%;
+    padding: 1%;
+    box-sizing: border-box;
+    border-radius: 13px;
+    background-color: rgba(185, 182, 201, 0.8);
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input:focus {
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__checkbox {
+    margin-right: 10px;
+}
+
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    font-size: 20px;
+    background: linear-gradient(to right, #309e6b, #1e504c);
+    border-radius: 8px;
+    font-family: 'Scheherazade New';
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: rgb(255, 255, 255);
+    height: 40px;
+}
+
+.formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+
+/* Estilos para validacion */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+
+
+/*Estilos pie-de-página*/
+
+.footer {
+    background: #1e504c;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid antiquewhite;
+    font-size: 8px;
+    min-height: 5vh;
+}
+
+.pie {
+    color: antiquewhite;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+/* Mediaqueries */
+
+@media screen and (min-width: 956px) {
+    .cont-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 956px) {
+    .cont-principal {
+        font-size: 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+    .formulario__mensaje {
+        box-sizing: border-box;
+        overflow-x: scroll;
+    }
+    .formulario__btn {
+        width: 90%;
+    }
+    .footer {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 360px) {
+    .menu {
+        display: flex;
+        flex-flow: column;
+        height: 60px;
+        align-items: center;
+        border-bottom: 2px solid antiquewhite;
+        min-height: 8vh;
+    }
+    .oculto {
+        display: none;
+    }
+    .cont-principal {
+        font-size: 17px;
+        min-height: 86vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja-transparente {
+        width: 70%;
+        margin: 5px;
+        padding: 15px;
+    }
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+    .formulario__mensaje {
+        box-sizing: border-box;
+        overflow-x: scroll;
+    }
+    .formulario__mensaje p {
+        margin: 0;
+    }
+    .formulario__btn {
+        width: 90%;
+    }
+    .footer {
+        font-size: 7px;
+    }
+}

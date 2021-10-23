@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Líneas Compartidas</title>
+
+    <!--Links externos y css externo -->
+    <link rel="shortcut icon" href="Imagenes/Icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/formulario.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="padre" id="padre">
+        <main class="menu">
+            <div class="logo">
+                <a href="lineas-compartidas.html">Líneas Compartidas<img class="logotipo" src="Imagenes/Icono2.ico"></a>
+            </div>
+            <nav class="nav">
+                <a href="quienes-somos.html"><i class="fas fa-info-circle icono" aria-hidden="true"></i><span class="oculto">Quienes Somos</span></a>
+                <a href="contacto.html"><i class="fas fa-envelope icono" aria-hidden="true"></i><span class="oculto">Contacto</span></a>
+                <a href="formulario.html"><i class="fas fa-laptop icono" aria-hidden="true"></i><span class="oculto">Registro</span></a>
+            </nav>
+        </main>
+        <div class="cont-principal" id="cont-principal">
+            <div class="caja-transparente">
+                <form action="" class="formulario" id="formulario">
+                    <!--Grupo usuario-->
+                    <div class="formulario__grupo" id="grupo__usuario">
+                        <label for="usuario" class="formulario__label">Usuario</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Rebeca21">
+                            <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                        </div>
+                        <p class="formulario__input-error">El usuario debe ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo</p>
+                    </div>
+
+                    <!--Grupo Nombre-->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="RebecaWeber">
+                            <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre debe ser de 4 a 16 dígitos y solo puede contener letras y espacios.</p>
+                    </div>
+
+                    <!--Grupo contraseña-->
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label for="password" class="formulario__label">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password">
+                            <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                    </div>
+
+                    <!--Grupo contraseña2-->
+                    <div class="formulario__grupo" id="grupo__password2">
+                        <label for="password2" class="formulario__label">Repetir contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password2" id="password2">
+                            <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                        </div>
+                        <p class="formulario__input-error">Amabas contraseñas deben ser iguales.</p>
+                    </div>
+
+                    <!--Grupo Correo Electronico-->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo Electronico</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                            <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones.</p>
+                    </div>
+
+                    <!--Grupo Telefono-->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Telefono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1155946313">
+                            <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener números y el máximo es de 4 a 12 dígitos.</p>
+                    </div>
+                    <!--Grupo: Terminos y Condiciones-->
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Términos y Condiciones
+                    </label>
+                    </div>
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellena el formulario correctamente</p>
+                    </div>
+
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió exitosamente!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="pie">
+            <p>© Líneas Compartidas | Todos los derechos reservados 2021</p>
+        </div>
+    </footer>
+    </div>
+    </div>
+    <script src="Javascript/formulario.js"></script>
+</body>
+
+</html>

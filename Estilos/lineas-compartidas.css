@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Merienda', cursive;
+    background-image: url(../Imagenes/fondo.jpg);
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: #1e504c;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 60px;
+    align-items: center;
+    border-bottom: 2px solid antiquewhite;
+    min-height: 8vh;
+}
+
+
+/*Estilos-barra-de-navegación*/
+
+.logo {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.logo a {
+    color: antiquewhite;
+    font-size: 16px;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.logo a:hover {
+    color: rgb(0, 0, 0)
+}
+
+.logotipo {
+    padding: 0;
+    margin: 0;
+    width: 17px;
+    height: 17px;
+}
+
+.nav {
+    flex: 4 1 auto;
+    text-align: center;
+}
+
+.nav a {
+    color: antiquewhite;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.nav a:hover {
+    color: rgb(0, 0, 0)
+}
+
+.icono {
+    padding: 0;
+    margin: 0 5px;
+}
+
+
+/*Estilos-cuerpo-de-contenido*/
+
+.cont-principal {
+    font-size: 23px;
+    min-height: 87vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Scheherazade New';
+}
+
+.cont-principal div a {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.cont-principal a:hover {
+    color: #1e504c;
+}
+
+.titulo {
+    padding: 2px;
+    margin: 6px;
+}
+
+.titulo>h1 {
+    font-size: 70px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+    color: rgb(222, 247, 194);
+    font-family: 'Scheherazade New';
+}
+
+.cont-principal1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.caja-transparente {
+    width: 40%;
+    height: 50%;
+    margin: 2%;
+    margin-top: 0%;
+    padding: 1%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: rgba(185, 182, 201, 0.8);
+}
+
+.parrafo {
+    text-align: center;
+}
+
+.lista {
+    margin-bottom: 10px;
+}
+
+.video {
+    width: 60%;
+    height: 90%;
+    margin: 2%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.video-mujer {
+    height: 90%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+/*Estilos pie-de-página*/
+
+.footer {
+    background: #1e504c;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid antiquewhite;
+    font-size: 10px;
+    min-height: 5vh;
+}
+
+.pie {
+    color: antiquewhite;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+/*Media queries*/
+
+@media screen and (min-width: 956px) {
+    .cont-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja-transparente {
+        width: 50%;
+    }
+    .video {
+        height: 80%;
+        width: 60%;
+        margin-top: 0%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 956px) {
+    .titulo>h1 {
+        font-size: 60px;
+        font-weight: 100;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .cont-principal {
+        font-size: 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video {
+        height: 100%;
+        width: 60%;
+        margin-top: 50px;
+    }
+    .caja-transparente {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    .footer {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 360px) {
+    .menu {
+        display: flex;
+        flex-flow: column;
+        height: 60px;
+        align-items: center;
+        border-bottom: 2px solid antiquewhite;
+        min-height: 8vh;
+    }
+    .oculto {
+        display: none;
+    }
+    .titulo>h1 {
+        font-size: 30px;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .parrafo {
+        text-align: center;
+    }
+    .cont-principal {
+        font-size: 17px;
+        min-height: 86vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont-principal1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video {
+        width: 90%;
+    }
+    .caja-transparente {
+        width: 90%;
+        margin: 10px;
+    }
+    .footer {
+        font-size: 7px;
+    }
+}
