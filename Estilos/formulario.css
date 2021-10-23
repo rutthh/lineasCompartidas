@@ -216,6 +216,10 @@ body {
     display: block;
 }
 
+.telOpcional {
+    font-size: 17px;
+}
+
 
 /* Estilos para validacion */
 
