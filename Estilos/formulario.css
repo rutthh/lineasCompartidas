@@ -316,6 +316,9 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .icono {
+        margin-left: 4px;
+    }
     .caja-transparente {
         width: 70%;
         margin: 5px;
