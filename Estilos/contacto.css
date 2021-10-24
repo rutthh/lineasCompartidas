@@ -198,7 +198,10 @@ textarea {
     .menu {
         display: flex;
         flex-flow: column;
+        height: 60px;
         align-items: center;
+        border-bottom: 2px solid antiquewhite;
+        min-height: 8vh;
     }
     .oculto {
         display: none;

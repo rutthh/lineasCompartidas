@@ -261,6 +261,8 @@ body {
         flex-flow: column;
         height: 60px;
         align-items: center;
+        border-bottom: 2px solid antiquewhite;
+        min-height: 8vh;
     }
     .nav {
         display: flex;

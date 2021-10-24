@@ -309,6 +309,7 @@ ul.slider li:target {
     }
     .container {
         width: 90%;
+        margin: 5px;
     }
     .caja-transparente {
         width: 90%;
