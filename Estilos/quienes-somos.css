@@ -267,6 +267,11 @@ body {
     .nav {
         display: flex;
         align-content: center;
+        margin-top: 5px;
+    }
+    .icono {
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .oculto {
         display: none;
@@ -277,7 +282,7 @@ body {
         margin-bottom: 5%;
     }
     .cont-principal {
-        min-height: 80vh;
+        min-height: 88vh;
         display: flex;
         flex-flow: column;
         align-items: center;
