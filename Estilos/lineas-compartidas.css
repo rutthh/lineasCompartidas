@@ -148,66 +148,56 @@ body {
     margin-bottom: 10px;
 }
 
-.container {
+.slider {
+    width: 60%;
     margin: auto;
-    background-color: rgba(185, 182, 201, 0.8);
-    width: 500px;
-    height: 400px;
-    padding: 10px;
-    border-radius: 12px;
+    overflow: hidden;
+    margin-right: 5px;
 }
 
-ul.slider {
-    position: relative;
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-out;
+}
+
+.slider li {
     width: 100%;
-    height: 300px;
-    border-radius: 12px;
+    list-style: none;
 }
 
-ul.slider li {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-}
-
-ul.slider li img {
+.slider img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
     border-radius: 12px;
 }
 
-ul.slider li:first-child {
-    opacity: 1;
-}
-
-ul.slider li:target {
-    opacity: 1;
-}
-
-.menu-num {
-    text-align: center;
-    margin: 5px;
-}
-
-.menu-num li {
-    display: inline-block;
-    text-align: center;
-}
-
-.menu-num li a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: #1e504c;
-    padding: 2px;
-    width: 20px;
-    font-size: 20px;
-    border-radius: 50%;
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
 }
 
 
@@ -255,18 +245,17 @@ ul.slider li:target {
         text-align: center;
     }
     .cont-principal {
+        height: 60%;
         font-size: 19px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .container {
-        height: 100%;
-        width: 60%;
-        margin-top: 50px;
+    .slider {
+        width: 50%;
     }
     .caja-transparente {
-        width: 60%;
+        width: 50%;
         margin-bottom: 10px;
     }
     .footer {
@@ -307,7 +296,7 @@ ul.slider li:target {
         flex-direction: column;
         align-items: center;
     }
-    .container {
+    .slider {
         width: 90%;
         margin: 5px;
     }
