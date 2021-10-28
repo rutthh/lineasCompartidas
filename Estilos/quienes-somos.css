@@ -105,8 +105,18 @@ body {
     flex-direction: row;
 }
 
+.video {
+    width: 35%;
+    margin: 2px;
+    margin-left: 15px;
+}
+
+.iframe {
+    border-radius: 12px;
+}
+
 .caja-transparente {
-    width: 70%;
+    width: 40%;
     height: 50%;
     margin: 2%;
     margin-top: 0%;
@@ -118,15 +128,15 @@ body {
 }
 
 .caja-transparente p {
-    font-size: 25px;
+    font-size: 19px;
     font-family: 'Scheherazade New';
 }
 
 
-/* Estilos-carta-de-presentacion */
+/* Estilos carta-de-presentacion */
 
 .carta {
-    width: 50%;
+    width: 35%;
     height: 50%;
     margin: 2%;
     margin-top: 0%;
@@ -227,18 +237,29 @@ body {
     }
     .cont-principal {
         min-height: 65vh;
+        display: inline-block;
+    }
+    .video {
+        width: 80%;
+        margin-left: 5%;
+    }
+    .iframe {
+        width: 100%;
     }
     .caja-transparente {
-        width: 50%;
-        height: 50%;
-        padding: 4%;
+        width: 80%;
+        height: 40%;
+        padding: 1%;
+        margin-left: 40px;
     }
     .caja-transparente p {
         font-size: 18px;
     }
     .carta {
-        display: block;
-        width: 450px;
+        width: 80%;
+        height: 40%;
+        padding: 1%;
+        margin-left: 40px;
     }
     .cara {
         border: none;
@@ -286,6 +307,13 @@ body {
         display: flex;
         flex-flow: column;
         align-items: center;
+    }
+    .video {
+        width: 80%;
+        margin-left: 0%;
+    }
+    .iframe {
+        width: 100%;
     }
     .caja-transparente {
         width: 80%;
