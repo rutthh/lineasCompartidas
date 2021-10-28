@@ -86,6 +86,21 @@ body {
 
 /* Estilos cuerpo-de-contenido */
 
+.cont-principalh1 {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Scheherazade New';
+}
+
+.titulo {
+    font-size: 70px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+    color: rgb(222, 247, 194);
+    font-family: 'Scheherazade New';
+}
+
 .cont-principal {
     font-size: 23px;
     min-height: 87vh;

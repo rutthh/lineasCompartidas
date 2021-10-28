@@ -102,89 +102,54 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     width: 100%;
+    height: 600px;
     flex-direction: row;
 }
 
 .caja-transparente {
     width: 50%;
-    height: 50%;
     margin: 2%;
-    margin-top: 0%;
     padding: 1%;
     box-sizing: border-box;
     border-radius: 12px;
     background-color: rgba(185, 182, 201, 0.8);
     text-align: center;
+    overflow-y: scroll;
 }
 
-.caja-transparente p {
-    font-size: 25px;
-    font-family: 'Scheherazade New';
-}
-
-
-/* Estilos-carta-de-presentacion */
-
-.carta {
+.caja-transparente2 {
     width: 50%;
-    height: 50%;
     margin: 2%;
-    margin-top: 0%;
-    background-color: rgba(185, 182, 201, 0.8);
-    font-family: 'Scheherazade New';
+    padding: 1%;
     box-sizing: border-box;
     border-radius: 12px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-}
-
-.cara {
-    border-right: 1px solid #ddd;
+    background-color: rgba(185, 182, 201, 0.8);
     text-align: center;
-    padding: 1.5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-.cara h2 {
-    color: #1e504c;
-    text-transform: uppercase;
-    padding: 0 1%;
-    letter-spacing: 1px;
+.scroll::-webkit-scrollbar {
+    width: 8px;
 }
 
-.cara h4 {
-    margin-bottom: 15%;
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
-.img-card {
-    border-radius: 50%;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    margin: 4% 3%;
-    height: 30%;
-    width: 35%;
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-.descripcion {
-    height: auto;
-    background: transparent;
-    position: relative;
-    text-align: center;
-    padding: 5%;
+h3 {
+    font-size: 30px;
 }
 
-.descripcion .social {
-    margin-top: 15%;
-}
-
-.descripcion .social a {
-    display: inline-block;
-    padding: 0 10%;
-    color: #1e504c;
-}
-
-.descripcion .social a:hover {
-    color: black;
+.parrafo {
+    text-decoration: underline;
+    font-size: 20px;
 }
 
 
@@ -289,25 +254,13 @@ body {
     }
     .caja-transparente {
         width: 80%;
+        height: 50%;
         padding: 5%;
-        display: flex;
-        justify-content: center;
     }
-    .caja-transparente p {
-        font-size: 16px;
-    }
-    .carta {
-        display: block;
+    .caja-transparente2 {
         width: 80%;
-    }
-    .descripcion p {
-        font-size: 17px;
-    }
-    .cara h4 {
-        margin-bottom: 2%;
-    }
-    .cara {
-        border: none;
+        height: 50%;
+        padding: 5%;
     }
     .footer {
         font-size: 7px;
